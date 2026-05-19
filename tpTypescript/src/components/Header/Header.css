@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: #111827;
+
+  border-bottom: 1px solid #2d3748;
+}
+
+.logo {
+  font-size: 28px;
+  color: white;
+}
+
+.search-input {
+  width: 300px;
+
+  padding: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #1f2937;
+  color: white;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+
+  color: white;
+  font-size: 20px;
+}

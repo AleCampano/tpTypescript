@@ -1,0 +1,31 @@
+.profile {
+  background-color: #111827;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  margin-bottom: 30px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 15px;
+
+  transform: rotate(-3deg);
+}
+
+.profile-stats {
+  display: flex;
+  gap: 15px;
+
+  margin: 15px 0;
+}

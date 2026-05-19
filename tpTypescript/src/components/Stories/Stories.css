@@ -1,0 +1,32 @@
+.stories {
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+
+  margin-bottom: 30px;
+
+  padding-bottom: 10px;
+}
+
+.story {
+  text-align: center;
+}
+
+.story img {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  border: 3px solid #ec4899;
+
+  object-fit: cover;
+
+  transform: rotate(-3deg);
+}
+
+.story p {
+  margin-top: 8px;
+  color: white;
+}
