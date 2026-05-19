@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react"
-
 import { getCatImages } from "../../services/catApi"
-
 import PostCard from "../PostCard/PostCard"
 import PostModal from "../PostModal/PostModal"
-
 import "./Feed.css"
 
 interface CatApiResponse {
