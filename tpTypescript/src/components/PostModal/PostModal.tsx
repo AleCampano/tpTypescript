@@ -31,8 +31,8 @@ function PostModal({
           <span>{likes} likes</span>
 
           <div className="comments">
-            <p>🐱 Me encanta esta foto</p>
-            <p>😺 Muy tierno</p>
+            <p>🐱 Que gato mas maravilloso</p>
+            <p>😺 Me encanta 💙💛</p>
           </div>
 
           <button onClick={onClose}>

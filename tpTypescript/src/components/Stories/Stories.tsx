@@ -1,12 +1,12 @@
 import "./Stories.css"
 
 const stories = [
-  "Milo",
-  "Luna",
-  "Leo",
-  "Bella",
-  "Nala",
-  "Simba",
+  "Poda",
+  "Fidu",
+  "Bata",
+  "Syrup",
+  "Boña",
+  "Momia",
 ]
 
 function Stories() {

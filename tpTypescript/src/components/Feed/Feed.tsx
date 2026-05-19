@@ -37,7 +37,7 @@ function Feed() {
             imageUrl={post.url}
             username={`cat_user_${index}`}
             likes={Math.floor(Math.random() * 1000)}
-            caption="Mira mi gato 😺"
+            caption="Mira mi gato, maravilloso jaja 😺"
             onOpenModal={() =>
               setSelectedPost(post)
             }
