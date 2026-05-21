@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+El proyecto deberá incluir un README.md correctamente redactado.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dentro del README deberán explicar:
+- Cómo organizaron el proyecto.
 
-Currently, two official plugins are available:
+El proyecto lo organizamos en distintas carpetas dentro del src. En este creamos los componentes en carpetas individuales y cada uno con su propio css.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Qué componentes crearon.
 
-## React Compiler
+Los componentes que creamos fueron: Feed, Header, PostCard, PostModal, Profile, SideBar y Stories.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Qué responsabilidad tiene cada componente.
 
-## Expanding the ESLint configuration
+Cada uno de los componentes tiene como responsabilidad su respectivo TSX y CSS.
+Profile:Se encarg de mostrar justamente las publicaciones y las estadisticas del usuario logueado, que en este caso ya entras logueado.
+Feed:
+Header: El header tiene la  barra de busqueda la cual no es funcional y el titulo de la pagina.
+PostCard:
+PostModal:
+SideBar: El sideBar son los botones que estan al costado de la pagina.
+Stories:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Por qué decidieron componentizar de esa manera.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Lo componetizamos de esta manera porque nos parecio mucho mas cómodo tener el TSX y CSS de la respectiva seccion de nuestro proyecto.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Cómo se comunican los componentes mediante props.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Qué hooks utilizaron y para qué.
+- Qué diseño de Figma utilizaron como referencia.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+El diseño de Figma que utilizamos como referencia fue: - https://www.figma.com/community/file/1004033523744290376
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Cómo resolvieron la visualización individual de publicaciones.
+
+-  Cómo simularon el perfil de usuario logueado.
+
+
+-  Qué datos decidieron mostrar en el perfil.
+
+Los datos que decidimos mostar en el perfil son: Cantidad de Publiaciones, Seguidores y Seguidos, las fotos de las publicaciones, descripción y nombre de usuario. También pusimos un boton visual de editar perfil.
+
+-  Qué estados utilizaron para seleccionar publicaciones o manejar la vista individual.
+

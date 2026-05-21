@@ -17,7 +17,7 @@
 
 .search-input {
   width: 300px;
-
+ margin-right: 700px;
   padding: 10px;
 
   border: none;
@@ -25,12 +25,4 @@
 
   background-color: #555e6b;
   color: white;
-}
-
-.header-icons {
-  display: flex;
-  gap: 15px;
-
-  color: white;
-  font-size: 20px;
 }

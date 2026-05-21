@@ -15,8 +15,8 @@ function PostCard({
   likes,
   caption,
   onOpenModal,
-}: Props) {
-  // Estado del like
+}: Props) 
+{
   const [liked, setLiked] = useState(false)
 
   return (

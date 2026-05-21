@@ -35,7 +35,7 @@ function Feed() {
           <PostCard
             key={post.id}
             imageUrl={post.url}
-            username={`cat_user_${index}`}
+            username={`GatoFana${index}`}
             likes={Math.floor(Math.random() * 1000)}
             caption="Mira mi gato, maravilloso jaja 😺"
             onOpenModal={() =>
@@ -48,7 +48,7 @@ function Feed() {
       {selectedPost && (
         <PostModal
           imageUrl={selectedPost.url}
-          username="cat_user"
+          username="Fanatico"
           likes={120}
           caption="Gato adorable 🐱"
           onClose={() => setSelectedPost(null)}
