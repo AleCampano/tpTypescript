@@ -12,22 +12,28 @@ Los componentes que creamos fueron: Feed, Header, PostCard, PostModal, Profile, 
 - Qué responsabilidad tiene cada componente.
 
 Cada uno de los componentes tiene como responsabilidad su respectivo TSX y CSS.
-Profile:Se encarg de mostrar justamente las publicaciones y las estadisticas del usuario logueado, que en este caso ya entras logueado.
-Feed:
-Header: El header tiene la  barra de busqueda la cual no es funcional y el titulo de la pagina.
-PostCard:
-PostModal:
-SideBar: El sideBar son los botones que estan al costado de la pagina.
-Stories:
+-Profile:Se encarg de mostrar justamente las publicaciones y las estadisticas del usuario logueado, que en este caso ya entras logueado.
+-Feed: El feed vendria a ser la estructura de toda la pagina principal, donde se muestran  las publicaciones.
+-Header: El header tiene la  barra de busqueda la cual no es funcional y el titulo de la pagina.
+-PostCard: Esta parte es la estructura de  las publicaciones en la pagina principal.
+-PostModal: Cuando tocas la publicacion te abre la publicacion con sus comentarios.
+-SideBar: El sideBar son los botones que estan al costado de la pagina.
+-Stories: Las stories son justamente como dice el nombre, la zona donde se encuentran las historias no funcionales. Donde estan los nombres de distintos usuarios.
 
 - Por qué decidieron componentizar de esa manera.
 
-Lo componetizamos de esta manera porque nos parecio mucho mas cómodo tener el TSX y CSS de la respectiva seccion de nuestro proyecto.
+Lo componetizamos de esta manera porque nos parecio mucho mas cómodo tener el TSX y CSS de la respectiva seccion de nuestro proyecto. Tambien separamos cada TSX con su respectivo CSS porque nos parece una foma mas simple de componentizar y organizar.
 
 - Cómo se comunican los componentes mediante props.
 
+Los componentes se comunican mediante interfaces, en este caso tenemos las interfaces de Post y de las respuestas de la API. Eso lo exportamos principalmente a los postModal y Card.
 
 - Qué hooks utilizaron y para qué.
+
+Usamos el UseState y el UseEffect. 
+-El useState principalmente guarda la funcion setLike para que a las publicaciones a las que le des like se les guarde ese mismo like.
+-
+
 - Qué diseño de Figma utilizaron como referencia.
 
 El diseño de Figma que utilizamos como referencia fue: - https://www.figma.com/community/file/1004033523744290376

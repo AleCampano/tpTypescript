@@ -10,14 +10,12 @@ interface CatApiResponse {
 }
 
 function Feed() {
-  // Estado donde guardamos los posts
   const [posts, setPosts] = useState<CatApiResponse[]>([])
 
   // Estado del modal
   const [selectedPost, setSelectedPost] =
     useState<CatApiResponse | null>(null)
-
-  // useEffect se ejecuta cuando carga el componente
+    
   useEffect(() => {
     const fetchCats = async () => {
       const data = await getCatImages()
@@ -49,7 +47,7 @@ function Feed() {
         <PostModal
           imageUrl={selectedPost.url}
           username="Fanatico"
-          likes={120}
+          likes={67}
           caption="Gato adorable 🐱"
           onClose={() => setSelectedPost(null)}
         />

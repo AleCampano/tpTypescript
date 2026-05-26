@@ -5,3 +5,8 @@ export interface Post {
   likes: number
   caption: string
 }
+
+export interface CatApiResponse {
+  id: string
+  url: string
+}
