@@ -32,7 +32,7 @@ Los componentes se comunican mediante interfaces, en este caso tenemos las inter
 
 Usamos el UseState y el UseEffect. 
 -El useState principalmente guarda la funcion setLike para que a las publicaciones a las que le des like se les guarde ese mismo like.
--
+-El useEffect lo usamos principalmente para el feed, en este usamos una funcion async que espere a que le lleguen las imagenes de la api para asi poder mostrarlas en las publicaciones.
 
 - Qué diseño de Figma utilizaron como referencia.
 
@@ -40,8 +40,11 @@ El diseño de Figma que utilizamos como referencia fue: - https://www.figma.com/
 
 - Cómo resolvieron la visualización individual de publicaciones.
 
+Principalmente en el postModal, el cual se encarga de ser el componente de cada publicacion individual. Tambien utilizamos la interfaz de Props para estructurar esa publicacion. 
+
 -  Cómo simularon el perfil de usuario logueado.
 
+Exportamos el UserData.ts que tiene toda la info del usuario ya logueado hacia el profile.tsx. Desde UserData se le puede modificar la informacion al usuario ya logueado.
 
 -  Qué datos decidieron mostrar en el perfil.
 
@@ -49,3 +52,4 @@ Los datos que decidimos mostar en el perfil son: Cantidad de Publiaciones, Segui
 
 -  Qué estados utilizaron para seleccionar publicaciones o manejar la vista individual.
 
+Utilizamos el estado selectedPost con useState para almacenar la publicacion seleccionada, esto te deja abrir y cerrar el modal de vista individual, mostrando la informacion del post seleccionado.

@@ -17,13 +17,13 @@ function Feed() {
     useState<CatApiResponse | null>(null)
     
   useEffect(() => {
-    const fetchCats = async () => {
+    const obtenerGatos = async () => {
       const data = await getCatImages()
 
       setPosts(data)
     }
 
-    fetchCats()
+    obtenerGatos()
   }, [])
 
   return (
