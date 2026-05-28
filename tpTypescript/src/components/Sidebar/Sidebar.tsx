@@ -3,14 +3,12 @@ import "./Sidebar.css"
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <h2>Menu</h2>
-
       <nav>
         <ul>
-          <li>🏠 Home</li>
-          <li>🔍 Explore</li>
-          <li>👤 Profile</li>
-          <li>⚙️ Settings</li>
+          <li>🏠 Inicio</li>
+          <li>🔍 Explorar</li>
+          <li>👤 Perfil</li>
+          <li>⚙️ Ajustes</li>
         </ul>
       </nav>
     </aside>

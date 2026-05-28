@@ -5,11 +5,13 @@ function Header() {
     <header className="header">
       <h1 className="logo">Instagram Felino</h1>
 
-      <input
-        type="text"
-        placeholder="Buscar"
-        className="search-input"
-      />
+      <div className="search-wrapper">
+        <input
+          type="text"
+          placeholder="Buscar"
+          className="search-input"
+        />
+      </div>
     </header>
   )
 }
